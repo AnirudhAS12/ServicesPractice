@@ -1,0 +1,23 @@
+<div class="card" style="width: 48rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{account.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{account.status}}</h6>
+    <hr >
+    <p class="card-text">This account is {{account.status}}</p>
+    <button
+     type="button" 
+    class="btn btn-success"
+    (click)="setAccountTo('active')">
+    Set to 'active'
+  </button>
+    <button type="button" 
+    class="btn btn-warning" 
+    style="margin-left: 1%"
+    (click)="setAccountTo('inactive')">Set to 'inactive'</button>
+    <button type="button" 
+    class="btn btn-danger" 
+    style="margin-left: 1%"
+    (click)="setAccountTo('unknown')">Set to 'unknown'</button>
+
+  </div>
+</div>
